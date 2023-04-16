@@ -19,7 +19,8 @@ export default function Home() {
 
   const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+    window.location.reload();
+    
     let data = {
       name:nameRef.current?.value,
       email:emailRef.current?.value,
@@ -37,7 +38,7 @@ export default function Home() {
     }).then((res) => {
       if(res.status === 200) console.log("メール送信成功");
     })
-    window.location.reload();
+    
   };
 
 
