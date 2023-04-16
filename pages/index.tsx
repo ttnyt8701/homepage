@@ -37,7 +37,7 @@ export default function Home() {
     }).then((res) => {
       if(res.status === 200) console.log("メール送信成功");
     })
-
+    window.location.reload();
   };
 
 
