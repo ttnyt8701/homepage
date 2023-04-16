@@ -5,6 +5,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub,faTwitter,faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import img_me from '../public/me.png'
 import no_img from '../public/noimg.png'
@@ -20,7 +21,7 @@ export default function Home() {
   const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     window.location.reload();
-    
+
     let data = {
       name:nameRef.current?.value,
       email:emailRef.current?.value,
@@ -62,6 +63,7 @@ export default function Home() {
             {/* responsive menu */}
             <div className="md:hidden ">
                 <i className="fa-sharp fa-solid fa-bars fa-2xl"></i>
+                <FontAwesomeIcon icon={faBars} className="text-2xl" />
             </div>
         </div>
     </header>
