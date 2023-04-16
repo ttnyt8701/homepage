@@ -8,8 +8,9 @@ import { faGithub,faTwitter,faDiscord } from "@fortawesome/free-brands-svg-icons
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import img_me from '../public/me.png'
-import no_img from '../public/noimg.png'
-
+// import no_img from '../public/noimg.png'
+import homepage_img from '../public/homepage.png'
+import sns_img from '../public/sns-app.png'
 
 
 export default function Home() {
@@ -91,7 +92,7 @@ export default function Home() {
                 <h2 className="secondary-title mb-6">MyPortfolio</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div>
-                        <Image src={no_img} alt="" 
+                        <Image src={homepage_img} alt="" 
                         className="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer" />
                         <div className="w-full bg-gray-600 bg-opacity-60">
                             <p className="text-center">HomePage</p>
@@ -103,7 +104,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div>
-                        <Image src={no_img} alt="" 
+                        <Image src={sns_img} alt="" 
                         className="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer" />
                         <div className="w-full bg-gray-600 bg-opacity-60">
                             <p className="text-center">SNS-app</p>
