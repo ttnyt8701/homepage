@@ -72,7 +72,7 @@ export default function Home() {
             <div className="">
                 <Image src={img_me} alt='img' width={500} height={500} className="mx-auto sm:m-0 w-72 sm:w-80 icon cursor-pointer" />
                 <div className="bg-zinc-400 opacity-50 mt-4 text-center">
-                    <p>HoodieCat</p>
+                    <p>HoodieCat {process.env.GMAILUSER}</p>
                 </div>
             </div>
             <div className="text-4xl sm:text-2xl justify-center sm:justify-normal flex sm:flex-col">
