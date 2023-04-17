@@ -20,7 +20,7 @@ const nodemailer = require("nodemailer");
 
         //管理人が受け取るメール
         const toHostMailData = {
-            form: req.body.email,
+            from: req.body.email,
             to:"tyuuta519@gmail.com",
             subject:`${req.body.title}`,
             html:`
